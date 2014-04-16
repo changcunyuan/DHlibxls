@@ -16,8 +16,6 @@
 		97BCBBFB16DD4EBD00FF978C /* xls.c in Sources */ = {isa = PBXBuildFile; fileRef = DEB78B1A14BB9E6200845894 /* xls.c */; };
 		97BCBBFC16DD4EBD00FF978C /* xlstool.c in Sources */ = {isa = PBXBuildFile; fileRef = DEB78B1C14BB9E6200845894 /* xlstool.c */; };
 		BE404E86183FA700005BDA64 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE404E85183FA700005BDA64 /* Cocoa.framework */; };
-		BE404E8C183FA700005BDA64 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE404E8A183FA700005BDA64 /* InfoPlist.strings */; };
-		BE404E90183FA700005BDA64 /* DHlibxls.m in Sources */ = {isa = PBXBuildFile; fileRef = BE404E8F183FA700005BDA64 /* DHlibxls.m */; };
 		BE404E97183FA700005BDA64 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE404E96183FA700005BDA64 /* XCTest.framework */; };
 		BE404E98183FA700005BDA64 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE404E85183FA700005BDA64 /* Cocoa.framework */; };
 		BE404E9B183FA700005BDA64 /* DHlibxls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE404E84183FA700005BDA64 /* DHlibxls.framework */; };
@@ -28,9 +26,13 @@
 		BE404EAE183FA71A005BDA64 /* DHcell-Private.h in Headers */ = {isa = PBXBuildFile; fileRef = DEB78B5214BBA58300845894 /* DHcell-Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		BE404EAF183FA728005BDA64 /* DHxlsReader.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB78AC814BB9ABF00845894 /* DHxlsReader.m */; };
 		BE404EB0183FA72A005BDA64 /* DHcell.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB78B4F14BBA42300845894 /* DHcell.m */; };
-		BE404EB1183FA742005BDA64 /* libDHxlsReader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97BCBBE716DD4E9A00FF978C /* libDHxlsReader.a */; };
 		BE404EB5183FA782005BDA64 /* libDHxlsReader.a in CopyFiles */ = {isa = PBXBuildFile; fileRef = 97BCBBE716DD4E9A00FF978C /* libDHxlsReader.a */; };
 		BE404EB7183FA7F6005BDA64 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BE404EB6183FA7F6005BDA64 /* libiconv.dylib */; };
+		BEAC323718FD67CA003AEA9C /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9798C914BC839E006E5AC2 /* libiconv.dylib */; };
+		BEAC323A18FD683F003AEA9C /* ole.c in Sources */ = {isa = PBXBuildFile; fileRef = DEB78B1914BB9E6200845894 /* ole.c */; };
+		BEAC323C18FD6854003AEA9C /* xls.c in Sources */ = {isa = PBXBuildFile; fileRef = DEB78B1A14BB9E6200845894 /* xls.c */; };
+		BEAC323D18FD6854003AEA9C /* xlstool.c in Sources */ = {isa = PBXBuildFile; fileRef = DEB78B1C14BB9E6200845894 /* xlstool.c */; };
+		BEAC323E18FD6865003AEA9C /* endian.c in Sources */ = {isa = PBXBuildFile; fileRef = 3DC5F92F17F0A7D300F76FB1 /* endian.c */; };
 		DE2A39661502846600E4AF15 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = DE2A39651502846600E4AF15 /* config.h */; };
 		DE9798CA14BC839E006E5AC2 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9798C914BC839E006E5AC2 /* libiconv.dylib */; };
 		DEB78AC314BB9ABF00845894 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEB78AC214BB9ABF00845894 /* Foundation.framework */; };
@@ -58,13 +60,6 @@
 			remoteGlobalIDString = BE404E83183FA700005BDA64;
 			remoteInfo = DHlibxls;
 		};
-		BE404EB2183FA752005BDA64 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DEB78AB614BB9ABF00845894 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 97BCBBE616DD4E9A00FF978C;
-			remoteInfo = DHxlsReader;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -91,11 +86,6 @@
 		97BCBBF016DD4E9A00FF978C /* DHxlsReader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DHxlsReader-Prefix.pch"; sourceTree = "<group>"; };
 		BE404E84183FA700005BDA64 /* DHlibxls.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DHlibxls.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE404E85183FA700005BDA64 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
-		BE404E89183FA700005BDA64 /* DHlibxls-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DHlibxls-Info.plist"; sourceTree = "<group>"; };
-		BE404E8B183FA700005BDA64 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		BE404E8D183FA700005BDA64 /* DHlibxls-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DHlibxls-Prefix.pch"; sourceTree = "<group>"; };
-		BE404E8E183FA700005BDA64 /* DHlibxls.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHlibxls.h; sourceTree = "<group>"; };
-		BE404E8F183FA700005BDA64 /* DHlibxls.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DHlibxls.m; sourceTree = "<group>"; };
 		BE404E95183FA700005BDA64 /* DHlibxlsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DHlibxlsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE404E96183FA700005BDA64 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		BE404E9E183FA700005BDA64 /* DHlibxlsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DHlibxlsTests-Info.plist"; sourceTree = "<group>"; };
@@ -133,6 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEAC323718FD67CA003AEA9C /* libiconv.dylib in Frameworks */,
 				3DC5F92E17F0A65900F76FB1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,7 +134,6 @@
 			files = (
 				BE404EB7183FA7F6005BDA64 /* libiconv.dylib in Frameworks */,
 				BE404E86183FA700005BDA64 /* Cocoa.framework in Frameworks */,
-				BE404EB1183FA742005BDA64 /* libDHxlsReader.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,26 +190,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		BE404E87183FA700005BDA64 /* DHlibxls */ = {
-			isa = PBXGroup;
-			children = (
-				BE404E8E183FA700005BDA64 /* DHlibxls.h */,
-				BE404E8F183FA700005BDA64 /* DHlibxls.m */,
-				BE404E88183FA700005BDA64 /* Supporting Files */,
-			);
-			path = DHlibxls;
-			sourceTree = "<group>";
-		};
-		BE404E88183FA700005BDA64 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				BE404E89183FA700005BDA64 /* DHlibxls-Info.plist */,
-				BE404E8A183FA700005BDA64 /* InfoPlist.strings */,
-				BE404E8D183FA700005BDA64 /* DHlibxls-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		BE404E9C183FA700005BDA64 /* DHlibxlsTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -246,7 +216,6 @@
 				97BCBBEE16DD4E9A00FF978C /* DHxlsReader */,
 				DEB78ACF14BB9E6200845894 /* libxls */,
 				DEB78AC514BB9ABF00845894 /* Supporting Files */,
-				BE404E87183FA700005BDA64 /* DHlibxls */,
 				BE404E9C183FA700005BDA64 /* DHlibxlsTests */,
 				DEB78AC114BB9ABF00845894 /* Frameworks */,
 				DEB78AC014BB9ABF00845894 /* Products */,
@@ -411,7 +380,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				BE404EB3183FA752005BDA64 /* PBXTargetDependency */,
 			);
 			name = DHlibxls;
 			productName = DHlibxls;
@@ -459,7 +427,7 @@
 		DEB78AB614BB9ABF00845894 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0500;
 				TargetAttributes = {
 					BE404E94183FA700005BDA64 = {
 						TestTargetID = BE404E83183FA700005BDA64;
@@ -491,7 +459,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE404E8C183FA700005BDA64 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,9 +490,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE404E90183FA700005BDA64 /* DHlibxls.m in Sources */,
 				BE404EAF183FA728005BDA64 /* DHxlsReader.m in Sources */,
 				BE404EB0183FA72A005BDA64 /* DHcell.m in Sources */,
+				BEAC323E18FD6865003AEA9C /* endian.c in Sources */,
+				BEAC323C18FD6854003AEA9C /* xls.c in Sources */,
+				BEAC323D18FD6854003AEA9C /* xlstool.c in Sources */,
+				BEAC323A18FD683F003AEA9C /* ole.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,22 +528,9 @@
 			target = BE404E83183FA700005BDA64 /* DHlibxls */;
 			targetProxy = BE404E99183FA700005BDA64 /* PBXContainerItemProxy */;
 		};
-		BE404EB3183FA752005BDA64 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 97BCBBE616DD4E9A00FF978C /* DHxlsReader */;
-			targetProxy = BE404EB2183FA752005BDA64 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BE404E8A183FA700005BDA64 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BE404E8B183FA700005BDA64 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		BE404E9F183FA700005BDA64 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -588,7 +545,6 @@
 		97BCBBF416DD4E9A00FF978C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -596,7 +552,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Developer ID Application: Loyola University New Orleans School of Mass Comm (BUN87F4W87)";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
@@ -610,14 +566,13 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx10.8;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
 		97BCBBF516DD4E9A00FF978C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -625,7 +580,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Developer ID Application: Loyola University New Orleans School of Mass Comm (BUN87F4W87)";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -640,14 +595,13 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx10.8;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
 		97BCBBF616DD4E9A00FF978C /* Distribution */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -655,7 +609,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Developer ID Application: Loyola University New Orleans School of Mass Comm (BUN87F4W87)";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -670,7 +624,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx10.8;
+				SDKROOT = macosx;
 			};
 			name = Distribution;
 		};
@@ -683,7 +637,7 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CODE_SIGN_IDENTITY = "Developer ID Application: Loyola University New Orleans School of Mass Comm (BUN87F4W87)";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -724,7 +678,7 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CODE_SIGN_IDENTITY = "Developer ID Application: Loyola University New Orleans School of Mass Comm (BUN87F4W87)";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -762,7 +716,7 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CODE_SIGN_IDENTITY = "Developer ID Application: Loyola University New Orleans School of Mass Comm (BUN87F4W87)";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -903,22 +857,26 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DHxlsReaderIOS-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					./libxls,
@@ -926,7 +884,7 @@
 					./libxls/include/libxls,
 				);
 				OTHER_CODE_SIGN_FLAGS = "--deep";
-				SDKROOT = macosx10.8;
+				SDKROOT = macosx;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Distribution;
@@ -934,7 +892,7 @@
 		DE97994814BCD831006E5AC2 /* Distribution */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: Loyola University New Orleans School of Mass Comm (BUN87F4W87)";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				DSTROOT = /tmp/DHxlsReaderIOS.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DHxlsReaderIOS/DHxlsReaderIOS-Prefix.pch";
@@ -948,13 +906,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
@@ -967,17 +926,21 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					./libxls,
 					./libxls/include,
 					./libxls/include/libxls,
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CODE_SIGN_FLAGS = "--deep";
-				SDKROOT = macosx10.8;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -985,22 +948,26 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DHxlsReaderIOS-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					./libxls,
@@ -1008,7 +975,7 @@
 					./libxls/include/libxls,
 				);
 				OTHER_CODE_SIGN_FLAGS = "--deep";
-				SDKROOT = macosx10.8;
+				SDKROOT = macosx;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -1016,7 +983,7 @@
 		DEB78ACD14BB9ABF00845894 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: Loyola University New Orleans School of Mass Comm (BUN87F4W87)";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				DSTROOT = /tmp/DHxlsReaderIOS.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DHxlsReaderIOS/DHxlsReaderIOS-Prefix.pch";
@@ -1029,7 +996,7 @@
 		DEB78ACE14BB9ABF00845894 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: Loyola University New Orleans School of Mass Comm (BUN87F4W87)";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				DSTROOT = /tmp/DHxlsReaderIOS.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DHxlsReaderIOS/DHxlsReaderIOS-Prefix.pch";
